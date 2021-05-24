@@ -1,0 +1,9 @@
+[
+  [
+    "DepRule",
+    [".../cda"],
+    "-!->",
+    ".../validation",
+    { "description": "extensions must not use any test code" }
+  ]
+]
