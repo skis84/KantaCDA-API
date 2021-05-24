@@ -57,6 +57,9 @@ import fi.kela.kanta.to.OstopalvelunvaltuutusTO;
 import fi.kela.kanta.util.JaxbUtil;
 import fi.kela.kanta.util.KantaCDAUtil;
 
+
+import fi.kela.kanta.cda.validation:
+
 public class OstopalvelunvaltuutusKasaaja extends ArkistoKasaaja {
 
 	private static final String classCodeCOND = "COND";

@@ -27,9 +27,11 @@ import org.hl7.v3.XActRelationshipDocument;
 
 import fi.kela.kanta.cda.validation.Validoija;
 
-public abstract class ArkistoKasaaja extends Kasaaja {
+import fi.kela.kanta.cda.util.OidGenerator;
 
-	protected static final String template_id = "templateId";
+public abstract class ArkistoKasaaja extends Kasaaja {
+// TEst comment
+    protected static final String template_id = "templateId";
     protected static final String code = "%s.code";
     protected static final String title = "%s.title";
     protected static final String code_title = "%s.code.title";
@@ -41,7 +43,6 @@ public abstract class ArkistoKasaaja extends Kasaaja {
 	
 	public ArkistoKasaaja(Properties properties) {
 		super(properties);
-		// TODO Auto-generated constructor stub
 	}
 	
 	protected void validoiAsiakirja() {
