@@ -99,6 +99,7 @@ public abstract class ReseptiKasaaja extends Kasaaja {
      */
     protected void validoiLaakemaarays() {
         validoija.validoi();
+        System.out.println("Validate");
     };
 
     /**
