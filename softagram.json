@@ -3,7 +3,7 @@
     "DepRule",
     [".../cda"],
     "-!->",
-    ".../validation",
+    [".../validation",".../util"],
     { "description": "cda must not use any validation code" }
   ]
 ]
