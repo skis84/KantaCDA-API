@@ -4,6 +4,6 @@
     [".../cda"],
     "-!->",
     ".../validation",
-    { "description": "extensions must not use any test code" }
+    { "description": "cda must not use any validation code" }
   ]
 ]
