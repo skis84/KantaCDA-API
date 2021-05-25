@@ -77,6 +77,7 @@ public class ReseptiPurkaja extends Purkaja {
 
     @Override
     protected String getCodeSystem() {
+        // TEsting
         return "1.2.246.537.5.40105.2006.1";
     }
 
@@ -122,6 +123,7 @@ public class ReseptiPurkaja extends Purkaja {
     }
 
     /**
+     * Testing
      * Purkaa clinicalDocument/component/structuredBody/component/section/component/section/component/section rakenteen
      * alta löytyvien entryen tiedot LaakemaaraysTOn
      *
