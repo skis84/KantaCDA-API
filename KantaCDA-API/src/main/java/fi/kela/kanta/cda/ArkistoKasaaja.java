@@ -15,7 +15,7 @@ import fi.kela.kanta.cda.validation.Validoija;
 import fi.kela.kanta.cda.util.OidGenerator;
 
 public abstract class ArkistoKasaaja extends Kasaaja {
-// TEst comment
+
     protected static final String template_id = "templateId";
     protected static final String code = "%s.code";
     protected static final String title = "%s.title";
@@ -31,6 +31,7 @@ public abstract class ArkistoKasaaja extends Kasaaja {
 	}
 	
 	protected void validoiAsiakirja() {
+    // Add some comments
 		validoija.validoi();
 	}
 
