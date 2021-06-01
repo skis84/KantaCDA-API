@@ -1,9 +1,0 @@
-[
-  [
-    "DepRule",
-    ".../cda",
-    "-!->",
-    ".../util",
-    { "description": "cda must not use any util code" }
-  ]
-]
