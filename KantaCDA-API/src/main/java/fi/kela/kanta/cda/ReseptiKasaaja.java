@@ -1134,6 +1134,8 @@ public abstract class ReseptiKasaaja extends Kasaaja {
      */
     protected abstract Collection<POCDMT000040Reference> luoViittaukset(LaakemaaraysTO laakemaarays);
 
+
+    protected abstract Collection<POCDMT000040Reference> luoViittaukset2(LaakemaaraysTO laakemaarays);
     /**
      * Luo entryRelationship/observation rakenteen lääkemääräyksen iteroinnille jos: iteroinnin määrä ja iterointi
      * teksti on annettu. Iterointi teksti sijoitetaan entryRelationship/observation/text elementtiin
