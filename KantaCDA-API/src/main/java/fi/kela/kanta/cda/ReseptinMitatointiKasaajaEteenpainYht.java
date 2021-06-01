@@ -399,7 +399,7 @@ public class ReseptinMitatointiKasaajaEteenpainYht extends ReseptiKasaaja {
      * @return POCDMT000040Reference lista
      */
     @Override
-    protected Collection<POCDMT000040Reference> luoViittaukset(LaakemaaraysTO laakemaarays) {
+    protected Collection<POCDMT000040Reference> luoViittaukset(LaakemaaraysTO laakemaarays, String newParam) {
         Collection<POCDMT000040Reference> viittaukset = new ArrayList<POCDMT000040Reference>();
         CD code = of.createCD();
         String oid = laakemaarays.getOid();
@@ -588,10 +588,10 @@ public class ReseptinMitatointiKasaajaEteenpainYht extends ReseptiKasaaja {
         return JaxbUtil.getInstance().marshalloi(kasaaReseptiCDA(), "urn:hl7-org:v3 CDA_Fi.xsd");
     }
 
-    // TODO: Tarvitaanko tähän mitään mitätöinnin osalta edes?
+    // TODO: Tarvitaanko tähän mitään?
     @Override
     protected void luoAsiakirjakohtaisetRakenteet(LaakemaaraysTO laakemaarays) {
-        // TODO Auto-generated method stub
+        // TODO Auto-generated
     }
 
     @Override
