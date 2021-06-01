@@ -51,13 +51,15 @@ import org.hl7.v3.XDocumentSubstanceMood;
 
 import fi.kela.kanta.cda.validation.Validoija;
 import fi.kela.kanta.to.AmmattihenkiloTO;
-import fi.kela.kanta.to.LaakemaaraysTO;
-import fi.kela.kanta.to.LeimakentatTO;
+//import fi.kela.kanta.to.LaakemaaraysTO;
+//import fi.kela.kanta.to.LeimakentatTO;
 import fi.kela.kanta.to.MuuAinesosaTO;
 import fi.kela.kanta.to.VaikuttavaAineTO;
 import fi.kela.kanta.to.VaikuttavaAinesosaTO;
 import fi.kela.kanta.to.ValmisteenKayttotapaTO;
 import fi.kela.kanta.util.KantaCDAUtil;
+
+import fi.kela.kanta.cda.validation;
 
 public abstract class ReseptiKasaaja extends Kasaaja {
 
