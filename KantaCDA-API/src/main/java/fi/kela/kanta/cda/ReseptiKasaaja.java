@@ -112,7 +112,7 @@ public abstract class ReseptiKasaaja extends Kasaaja {
         text.getContent().add(of.createStrucDocItemParagraph(luoParagraphContent(today)));
         text.getContent().add(of.createStrucDocItemParagraph(
                 luoParagraphContent(laakemaarays.getAmmattihenkilo().getKokonimi().getKokoNimi())));
-        return text;
+        return text+ "testValue";
     }
 
     /**
@@ -127,7 +127,7 @@ public abstract class ReseptiKasaaja extends Kasaaja {
         StrucDocContent content = of.createStrucDocContent();
         content.getContent().add(string);
         paragraph.getContent().add(of.createStrucDocItemContent(content));
-        return paragraph;
+        return paragraph+"something";
     }
 
     /**
