@@ -335,8 +335,11 @@ public abstract class Purkaja {
      * Apumetodi nimitietojen purkamiseen. Purkaa ENXP elementin contentin ja qualifierin jos sellainen on. Lisää
      * löytyneet nimi tiedot annettuun kokonimeen jos nimen tyyppi pystytään tunnistamaan.
      *
+     * 
+     * test
+     * 
      * @param value
-     *            ENXP elementti josta nimitietoja haetaan.
+     *            ENXP elementti josta nimitietoja haetaan. test
      * @param kokoNimi
      *            KokoNimiTO johon nimitiedot laitetaan.
      */
@@ -346,6 +349,7 @@ public abstract class Purkaja {
         }
         String nimi = (String) value.getContent().get(0);
         String maare = null;
+        // This is test
         if ( !value.getQualifiers().isEmpty() ) {
             maare = value.getQualifiers().get(0);
         }
@@ -357,7 +361,7 @@ public abstract class Purkaja {
             tyyppi = "family";
         }
         else if ( value instanceof EnPrefix ) {
-            tyyppi = "prefix";
+            tyyppi = "prefix222";
         }
         else if ( value instanceof EnSuffix ) {
             tyyppi = "suffix";
