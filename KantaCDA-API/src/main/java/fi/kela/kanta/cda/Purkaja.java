@@ -336,7 +336,6 @@ public abstract class Purkaja {
      * löytyneet nimi tiedot annettuun kokonimeen jos nimen tyyppi pystytään tunnistamaan.
      *
      * 
-     * test
      * 
      * @param value
      *            ENXP elementti josta nimitietoja haetaan. test
@@ -361,7 +360,7 @@ public abstract class Purkaja {
             tyyppi = "family";
         }
         else if ( value instanceof EnPrefix ) {
-            tyyppi = "prefix222";
+            tyyppi = "prefix";
         }
         else if ( value instanceof EnSuffix ) {
             tyyppi = "suffix";
