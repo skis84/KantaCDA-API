@@ -425,6 +425,7 @@ public abstract class Purkaja {
 
     protected void puraText(POCDMT000040Section section, List<String> nayttomuoto) {
         StrucDocText text = section.getText();
+        System.out.println(text);
         if ( text != null && text.getContent() != null && !text.getContent().isEmpty() ) {
             List<Serializable> content = text.getContent();
             for (int i = 0; i < content.size(); i++) {
