@@ -135,4 +135,113 @@ public class JaxbUtil {
         return result;
     }
 
+    
+      public POCDMT000040ClinicalDocument unmarshaller(String xml) throws JAXBException {
+        long start = 0;
+        if ( LOGGER.isDebugEnabled() ) {
+            start = System.currentTimeMillis();
+        }
+
+        POCDMT000040ClinicalDocument result = null;
+        try {
+            StringReader reader = new StringReader(xml);
+            Unmarshaller u = jaxbContext.createUnmarshaller();
+            result = u.unmarshal(new StreamSource(reader), POCDMT000040ClinicalDocument.class).getValue();
+        }
+        catch (JAXBException e) {
+            LOGGER.error("UnMarshallointi epäonnistui.", e.getMessage());
+            throw e;
+        }
+
+        if ( LOGGER.isDebugEnabled() ) {
+            long end = System.currentTimeMillis();
+            LOGGER.debug("Unmarshalling took " + (end - start) + " ms.");
+        }
+
+        return result;
+    }
+    
+    
+      public POCDMT000040ClinicalDocument unmarshaller(String xml) throws JAXBException {
+        long start = 0;
+        if ( LOGGER.isDebugEnabled() ) {
+            start = System.currentTimeMillis();
+        }
+
+        POCDMT000040ClinicalDocument result = null;
+        try {
+            StringReader reader = new StringReader(xml);
+            Unmarshaller u = jaxbContext.createUnmarshaller();
+            result = u.unmarshal(new StreamSource(reader), POCDMT000040ClinicalDocument.class).getValue();
+        }
+        catch (JAXBException e) {
+            LOGGER.error("UnMarshallointi epäonnistui.", e.getMessage());
+            throw e;
+        }
+
+        if ( LOGGER.isDebugEnabled() ) {
+            long end = System.currentTimeMillis();
+            LOGGER.debug("Unmarshalling took " + (end - start) + " ms.");
+        }
+
+        return result;
+    }
+    
+    
+      public POCDMT000040ClinicalDocument unmarshaller(String xml) throws JAXBException {
+        long start = 0;
+        if ( LOGGER.isDebugEnabled() ) {
+            start = System.currentTimeMillis();
+        }
+
+        POCDMT000040ClinicalDocument result = null;
+        try {
+            StringReader reader = new StringReader(xml);
+            Unmarshaller u = jaxbContext.createUnmarshaller();
+            result = u.unmarshal(new StreamSource(reader), POCDMT000040ClinicalDocument.class).getValue();
+        }
+        catch (JAXBException e) {
+            LOGGER.error("UnMarshallointi epäonnistui.", e.getMessage());
+            throw e;
+        }
+
+        if ( LOGGER.isDebugEnabled() ) {
+            long end = System.currentTimeMillis();
+            LOGGER.debug("Unmarshalling took " + (end - start) + " ms.");
+        }
+
+        return result;
+    }
+    
+    
+      public POCDMT000040ClinicalDocument unmarshaller(String xml) throws JAXBException {
+        long start = 0;
+        if ( LOGGER.isDebugEnabled() ) {
+            start = System.currentTimeMillis();
+        }
+
+        POCDMT000040ClinicalDocument result = null;
+        try {
+            StringReader reader = new StringReader(xml);
+            Unmarshaller u = jaxbContext.createUnmarshaller();
+            result = u.unmarshal(new StreamSource(reader), POCDMT000040ClinicalDocument.class).getValue();
+        }
+        catch (JAXBException e) {
+            LOGGER.error("UnMarshallointi epäonnistui.", e.getMessage());
+            throw e;
+        }
+
+        if ( LOGGER.isDebugEnabled() ) {
+            long end = System.currentTimeMillis();
+            LOGGER.debug("Unmarshalling took " + (end - start) + " ms.");
+        }
+
+        return result;
+    }
+    
+    
+    
+    
+    
+    
 }
