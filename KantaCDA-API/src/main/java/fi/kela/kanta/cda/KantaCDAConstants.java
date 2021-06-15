@@ -269,6 +269,102 @@ public final class KantaCDAConstants {
         }
     }
 
+  
+    public enum ReseptikyselynSyy {
+        HOITO(1),
+        POTILASOHJE(10),
+        UUSIMISPYYNTÖJEN_KÄSITTELYN_TILANNE(11),
+        KANSALAISEN_KATSELUYHTEYS(12),
+        KANSALAISEN_KATSELUYHTEYS_LOKITIEDOT(13),
+        RESEPTIKESKUKSEN_TIETOJEN_KÄYTÖN_VALVONTA(14),
+        RESEPTIKESKUKSEEN_LIITTYVÄT_ERÄAJOT(15),
+        UUSIMISPYYNTÖJEN_HAKU(16),
+        KORJATUT_JA_MITÄTÖIDYT_ANNOSJAKELULÄÄKEMÄÄRÄYKSET(17),
+        APTEEKIN_ANNOSJAKELUPOTILAIDEN_UUDET_LÄÄKEMÄÄRÄYKSET(18),
+        KIIREELLINEN_HOITO(2),
+        PKV_JA_HUUMAUSAINERESEPTIEN_HAKU(20),
+        RESEPTIN_HAKU_UUSIMISPYYNNÖN_KÄSITTELYÄ_VARTEN(21),
+        ULKOMAILLA_TAPAHTUVAA_LÄÄKKEEN_OSTOA_VARTEN_ANNETTAVA(22),
+        ULKOMAAN_MATKAA_VARTEN_ANNETTAVA_JÄLJENNÖS(23),
+        UUSIMISPYYNNÖN_LÄHETTÄMINEN(24),
+        TEKNISEN_HAIRION_SELVITTAMINEN(25),
+        KIELLETYN_RESEPTIN_HAKEMINEN_KORJAAMISTA_VARTEN(26),
+        KIELTOJEN_YLLAPITO(27),
+        POTILASOHJEEN_TULOSTUS_JALKIKATEEN(28),
+        APTEEKIN_ANNOSJAKELUPOTILAIDEN_LAAKEMAARAYKSET(29),
+        MITÄTÖINTI(3),
+        KORJAUS(4),
+        YHTEENVETO_SÄHKÖISISTÄ_LÄÄKEMÄÄRÄYKSISTÄ(5),
+        TOIMITUS(6),
+        TOIMITUKSEN_KORJAUS_TAI_MITÄTÖINTI(7),
+        SV_KORVAUS(8),
+        // MUU(9), 01.01.2006 09.07.2009
+        MUU(99);
+
+        private final int syy;
+
+        private ReseptikyselynSyy(int syy) {
+            this.syy = syy;
+        }
+
+        public String getSyy() {
+            return String.valueOf(syy);
+        }
+
+        public int getSyyValue() {
+            return syy;
+        }
+    }
+  
+  
+    public enum ReseptikyselynSyy {
+        HOITO(1),
+        POTILASOHJE(10),
+        UUSIMISPYYNTÖJEN_KÄSITTELYN_TILANNE(11),
+        KANSALAISEN_KATSELUYHTEYS(12),
+        KANSALAISEN_KATSELUYHTEYS_LOKITIEDOT(13),
+        RESEPTIKESKUKSEN_TIETOJEN_KÄYTÖN_VALVONTA(14),
+        RESEPTIKESKUKSEEN_LIITTYVÄT_ERÄAJOT(15),
+        UUSIMISPYYNTÖJEN_HAKU(16),
+        KORJATUT_JA_MITÄTÖIDYT_ANNOSJAKELULÄÄKEMÄÄRÄYKSET(17),
+        APTEEKIN_ANNOSJAKELUPOTILAIDEN_UUDET_LÄÄKEMÄÄRÄYKSET(18),
+        KIIREELLINEN_HOITO(2),
+        PKV_JA_HUUMAUSAINERESEPTIEN_HAKU(20),
+        RESEPTIN_HAKU_UUSIMISPYYNNÖN_KÄSITTELYÄ_VARTEN(21),
+        ULKOMAILLA_TAPAHTUVAA_LÄÄKKEEN_OSTOA_VARTEN_ANNETTAVA(22),
+        ULKOMAAN_MATKAA_VARTEN_ANNETTAVA_JÄLJENNÖS(23),
+        UUSIMISPYYNNÖN_LÄHETTÄMINEN(24),
+        TEKNISEN_HAIRION_SELVITTAMINEN(25),
+        KIELLETYN_RESEPTIN_HAKEMINEN_KORJAAMISTA_VARTEN(26),
+        KIELTOJEN_YLLAPITO(27),
+        POTILASOHJEEN_TULOSTUS_JALKIKATEEN(28),
+        APTEEKIN_ANNOSJAKELUPOTILAIDEN_LAAKEMAARAYKSET(29),
+        MITÄTÖINTI(3),
+        KORJAUS(4),
+        YHTEENVETO_SÄHKÖISISTÄ_LÄÄKEMÄÄRÄYKSISTÄ(5),
+        TOIMITUS(6),
+        TOIMITUKSEN_KORJAUS_TAI_MITÄTÖINTI(7),
+        SV_KORVAUS(8),
+        // MUU(9), 01.01.2006 09.07.2009
+        MUU(99);
+
+        private final int syy;
+
+        private ReseptikyselynSyy(int syy) {
+            this.syy = syy;
+        }
+
+        public String getSyy() {
+            return String.valueOf(syy);
+        }
+
+        public int getSyyValue() {
+            return syy;
+        }
+    }
+  
+  
+  
     public enum SuostumusTyyppi {
         SUULLINEN_SUOSTUMUS(1),
         ALLEKIRJOITETTU_SUOSTUMUS(2),
