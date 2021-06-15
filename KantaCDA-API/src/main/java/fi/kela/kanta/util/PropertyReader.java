@@ -41,15 +41,6 @@ public class PropertyReader {
     private PropertyReader() {
     }
 
-    private static Logger LOGGER = LogManager.getLogger(PropertyReader.class);
-
-    private static final String ENCODING_UTF8 = "UTF-8";
-    protected static final String use_defaults = "use_defaults";
-
-    private static ConcurrentHashMap<String, Properties> cache;
-
-    public static final String SIMPLE_DATE_FORMAT = "dd.MM.yyyy";
-
     /**
      * Palauttaa kyseinen properties objektin välimuistista. Etsii classloading:sta kyseisen tiedoston ja tallentaa se
      * välimuistiin ennen paluuta.
