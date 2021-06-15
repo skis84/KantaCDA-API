@@ -139,25 +139,7 @@ public class LaakemaaraysTO extends LeimakentatTO<LaakemaaraysTO> implements Ser
         this(true);
     }
 
-    private void initialize() {
-        alle12VuotiaanPainoValue = BigDecimal.valueOf(0.0);
-        pakkauksienLukumaara = 0;
-        laakkeenKokonaismaaraValue = 0;
-        ajalleMaaratynReseptinAikamaaraValue = 0;
-        iterointienMaara = 0;
-        iterointienValiValue = 0;
-        apteekissaValmistettavaLaakeOsoitin = false;
-        annosteluPelkastaanTekstimuodossa = true;
-        SICmerkinta = false;
-        laakevaihtokielto = false;
-        annosjakelu = false;
-        pysyvaislaakitys = false;
-        kyseessaLaakkeenkaytonAloitus = false;
-        huume = false;
-        uudistamiskielto = false;
-        laakarinpalkkioErikoislaakarina = false;
-        tartuntatauti = false;
-    }
+  
 
     public Date getMaarayspaiva() {
         return maarayspaiva;
