@@ -29,13 +29,7 @@ public class IdTO implements Serializable {
         return root;
     }
 
-    public void setRoot(String root) {
-        this.root = root;
-    }
 
-    public String getExtension() {
-        return extension;
-    }
 
     public void setExtension(String extension) {
         this.extension = extension;
