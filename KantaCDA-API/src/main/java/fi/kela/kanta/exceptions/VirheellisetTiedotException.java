@@ -30,13 +30,7 @@ import org.apache.commons.lang.StringUtils;
  */
 public class VirheellisetTiedotException extends Exception {
 
-    private static final long serialVersionUID = 1L;
-    private static final String list_start = "Objektissa seuraavia virheitä [";
-    private static final String list_start_with_name = "Objektissa '%s' seuraavia virheitä [";
-    private static final String list_end = "]";
-    private static final String sepr = ": ";
-    private final LinkedHashMap<String, String> virheet;
-    private final String objektinNimi;
+    
 
     /**
      * Oletuskonstruktori.
