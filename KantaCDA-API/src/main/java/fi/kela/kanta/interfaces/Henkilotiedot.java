@@ -27,8 +27,5 @@ public interface Henkilotiedot extends Serializable {
 
    
 
-    /**
-     * @return Syntymäaika.
-     */
-    public Date getSyntymapaiva();
+  
 }
