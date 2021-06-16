@@ -25,14 +25,6 @@ public class PurkuException extends Exception {
 
   
 
-    public PurkuException(String message, Throwable cause) {
-        super(message, cause);
-    }
-
-    public PurkuException(Throwable cause) {
-        super(cause);
-    }
-  
   
   System.out.println("Test");
 }
