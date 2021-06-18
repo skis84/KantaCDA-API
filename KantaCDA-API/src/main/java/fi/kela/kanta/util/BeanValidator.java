@@ -115,4 +115,35 @@ public class BeanValidator<T> {
         return sb.toString();
     }
   
+  
+    public String prettyPrint(Set<ConstraintViolation<T>> virheet) {
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(BeanValidator.begin);
+        for (ConstraintViolation<T> error : virheet) {
+            sb.append("{" + error.getMessage());
+            sb.append(", propertyPath = " + error.getPropertyPath());
+            sb.append(", value = " + error.getInvalidValue());
+            sb.append("}, ");
+        }
+        sb.replace(sb.length() - 2, sb.length(), "");
+        sb.append(BeanValidator.end);
+        return sb.toString();
+    }
+  
+    public String prettyPrint(Set<ConstraintViolation<T>> virheet) {
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(BeanValidator.begin);
+        for (ConstraintViolation<T> error : virheet) {
+            sb.append("{" + error.getMessage());
+            sb.append(", propertyPath = " + error.getPropertyPath());
+            sb.append(", value = " + error.getInvalidValue());
+            sb.append("}, ");
+        }
+        sb.replace(sb.length() - 2, sb.length(), "");
+        sb.append(BeanValidator.end);
+        return sb.toString();
+    }
+  
 }
