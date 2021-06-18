@@ -81,10 +81,6 @@ public class BeanValidator<T> {
         return sb.toString();
     }
   
-  
-   /**
-     * @return Siisti printti virheistä, logitusta varten.
-     */
     public String prettyPrint(Set<ConstraintViolation<T>> virheet) {
 
         StringBuilder sb = new StringBuilder();
