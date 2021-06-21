@@ -1,18 +1,4 @@
-<!--
-  Copyright 2020 Kansaneläkelaitos
-  
-  Licensed under the Apache License, Version 2.0 (the "License"); you may not
-  use this file except in compliance with the License.  You may obtain a copy
-  of the License at
-  
-    http://www.apache.org/licenses/LICENSE-2.0
-  
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-  License for the specific language governing permissions and limitations under
-  the License.
--->
+
 package fi.kela.kanta.interfaces;
 
 import java.io.Serializable;
@@ -36,16 +22,7 @@ public interface Organisaatio extends Serializable {
      */
     public Osoite getOsoite();
 
-    /**
-     * @param osoite
-     *            Organisaation osoite tiedot.
-     * @throws throws
-     *             IllegalAccessException Jos annetaan TO instanssi ja property kopioinnissa tapahtuu virhe
-     * @throws InvocationTargetException
-     *             Jos annetaan TO instanssi ja property kopioinnissa tapahtuu virhe
-     */
-    public void setOsoite(Osoite osoite) throws IllegalAccessException, InvocationTargetException;
-
+  
     /**
      * @return Organisaation yksilöintitunnus (oid).
      */
