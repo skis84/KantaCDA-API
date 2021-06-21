@@ -14,30 +14,7 @@ public class LaakemaarayksenKorjausTO extends LaakemaaraysTO {
         return korjaaja;
     }
 
-    public void setKorjaaja(AmmattihenkiloTO korjaaja) {
-        this.korjaaja = korjaaja;
-    }
-
-    public String getKorjauksenPerustelu() {
-        return korjauksenPerustelu;
-    }
-
-    public void setKorjauksenPerustelu(String korjauksenPerustelu) {
-        this.korjauksenPerustelu = korjauksenPerustelu;
-    }
-
-    public String getKorjauksenSyyKoodi() {
-        return korjauksenSyyKoodi;
-    }
-
-    public void setKorjauksenSyyKoodi(String korjauksenSyyKoodi) {
-        this.korjauksenSyyKoodi = korjauksenSyyKoodi;
-    }
-
-    public String getAlkuperainenOid() {
-        return alkuperainenOid;
-    }
-
+   
     public void setAlkuperainenOid(String alkuperainenOid) {
         this.alkuperainenOid = alkuperainenOid;
     }
