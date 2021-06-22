@@ -17,6 +17,18 @@ package fi.kela.kanta.exceptions;
 
 import java.text.MessageFormat;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.math.BigDecimal;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
 public class MissingAttributeException extends Exception {
 
     private static final long serialVersionUID = 1L;
