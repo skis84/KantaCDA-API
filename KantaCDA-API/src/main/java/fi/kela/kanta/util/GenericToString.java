@@ -18,21 +18,7 @@ import org.apache.logging.log4j.Logger;
 
 public class GenericToString {
 
-    @OmitFromToString
-    private SimpleDateFormat SDF = new SimpleDateFormat("dd.MM.yyyy HH:mm.ss");
-    private static final String comma = ", ";
-    private static final String equals = "=";
-    private static final String open_parameters = " [";
-    private static final String close_parameters = "]";
-    private static final String null_date = "null (date)";
-    private static final String na_date = "N/A (date)";
-    private static final String null_non_primitive = "null (object)";
-    private static final String na_non_primitive = "N/A (object)";
-    private static final String null_array = "null (array)";
-    private static final String na_array = "N/A (array)";
-    private static final String na_access = "N/A (restricted)";
-    private static final String hidden_value = "xxxxx";
-    private static final Logger LOGGER = LogManager.getLogger(GenericToString.class);
+   
 
     @Override
     public String toString() {
