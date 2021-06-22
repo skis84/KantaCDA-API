@@ -6,23 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public interface Organisaatio extends Serializable {
 
-    /**
-     * @return Organisaation nimi.
-     */
-    public String getNimi();
-
-    /**
-     * @param nimi
-     *            Organisaation nimi.
-     */
-    public void setNimi(String nimi);
-
-    /**
-     * @return Organisaation osoite tiedot.
-     */
-    public Osoite getOsoite();
-
-  
+   
     /**
      * @return Organisaation yksilöintitunnus (oid).
      */
