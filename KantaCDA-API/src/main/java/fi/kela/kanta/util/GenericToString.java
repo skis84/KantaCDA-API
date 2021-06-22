@@ -20,21 +20,6 @@ public class GenericToString {
 
    
 
-    @Override
-    public String toString() {
-        return this.toString(this);
-    }
-
-    @Override
-    public int hashCode() {
-        return this.toString().hashCode();
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        // TODO Auto-generated method stub
-        return super.equals(o);
-    }
 
     /**
      * Geneerinen toString metodi, jolla saadaan yksinkertainen siisti key=value listaus annetun luokan attribuuteista.
