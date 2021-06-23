@@ -1,6 +1,6 @@
 package fi.kela.kanta.cda.validation;
 
-import javax.swing.*;
+import javax.swing;
 
 import fi.kela.kanta.to.LaakemaaraysTO;
 
