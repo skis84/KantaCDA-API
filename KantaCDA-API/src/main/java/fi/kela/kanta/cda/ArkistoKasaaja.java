@@ -14,17 +14,7 @@ import fi.kela.kanta.cda.validation.Validoija;
 
 public abstract class ArkistoKasaaja extends Kasaaja {
 
-	protected Validoija validoija;
 	
-	public ArkistoKasaaja(Properties properties) {
-		super(properties);
-		// TODO Auto-generated constructor stub
-	}
-	
-	protected void validoiAsiakirja() {
-		validoija.validoi();
-	}
-
 	/**
      * Palauttaa CDA-asiakirjan, perustuen asiakirjakohtaisen kasaajan konstruktorissa annettuun TO:hon
      * 
