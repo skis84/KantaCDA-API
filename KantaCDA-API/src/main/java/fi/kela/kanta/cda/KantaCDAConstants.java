@@ -9,25 +9,6 @@ public final class KantaCDAConstants {
     public final static class Laakityslista {
         private Laakityslista() {
         }
-
-        public static final String CODESYSTEM = "1.2.246.537.6.12.2002.126";
-        public static final String VAIKUTTAVAT_AINESOSAT = "4";
-        public static final String MUUT_AINESOSAT = "10";
-        public static final String LAAKEMUOTO = "24";
-        public static final String SYOTTOKOODI = "30";
-        public static final String ANNOSOSIO_JA_JATKOOSIOT = "32";
-        public static final String SIC_MERKINTA = "56";
-        public static final String KAYTTOTARKOITUS_TEKSTINA = "58";
-        public static final String LAAKKEEN_MUUTOKSEN_TAI_LOPETUKSEN_SYY = "65";
-        public static final String HOITOLAJI = "67";
-        public static final String PYSYVA_LAAKITYS = "68";
-        public static final String ERILLISSELVITYS = "69";
-        public static final String UUSIMISKIELTO = "75";
-        public static final String LAAKEVAIHTOKIELTO = "81";
-        public static final String LAAKEVALMISTEEN_JA_PAKKAUKSEN_TIEDOT = "83";
-        public static final String ANNOSTELU_VAIN_TEKSTINA = "87";
-        public static final String RESEPTIN_MUUT_TIEDOT = "88";
-        public static final String ALLE_12VUOTIAAN_PAINO = "89";
         public static final String ANNOSJAKELU = "91";
         public static final String VIESTI_APTEEKILLE = "92";
         public static final String LAAKETIETOKANNAN_LAJI = "94";
