@@ -9,12 +9,5 @@ public class PurkuException extends Exception {
         super();
     }
 
-    public PurkuException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
-
-    public PurkuException(String message, Throwable cause) {
-        super(message, cause);
-    }
-
+    
 }
