@@ -10,4 +10,48 @@ public class PurkuException extends Exception {
     }
 
     
+    
+      private static final long serialVersionUID = 412351L;
+
+    public PurkuException() {
+        super();
+    }
+    
+    
+    
+    
+      private static final long serialVersionUID = 412351L;
+
+    public PurkuException() {
+        super();
+    }
+    
+    
+    
+    
+    
+      private static final long serialVersionUID = 412351L;
+
+    public PurkuException() {
+        super();
+    }
+    
+    
+    
+    
+      private static final long serialVersionUID = 412351L;
+
+    public PurkuException() {
+        super();
+    }
+    
+    
+    
+      private static final long serialVersionUID = 412351L;
+
+    public PurkuException() {
+        super();
+    }
+    
+    
 }
