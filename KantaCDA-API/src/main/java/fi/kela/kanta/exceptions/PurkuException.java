@@ -17,11 +17,4 @@ public class PurkuException extends Exception {
         super(message, cause);
     }
 
-    public PurkuException(String message) {
-        super(message);
-    }
-
-    public PurkuException(Throwable cause) {
-        super(cause);
-    }
 }
