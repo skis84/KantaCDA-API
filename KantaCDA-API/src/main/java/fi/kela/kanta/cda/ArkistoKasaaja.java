@@ -18,12 +18,7 @@ package fi.kela.kanta.cda;
 import java.math.BigInteger;
 import java.util.Properties;
 
-import javax.xml.bind.JAXBException;
 
-import org.hl7.v3.ActClinicalDocument;
-import org.hl7.v3.POCDMT000040ClinicalDocument;
-import org.hl7.v3.POCDMT000040RelatedDocument;
-import org.hl7.v3.XActRelationshipDocument;
 
 import fi.kela.kanta.cda.validation.Validoija;
 
