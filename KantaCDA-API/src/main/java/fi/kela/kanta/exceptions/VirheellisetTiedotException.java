@@ -74,6 +74,96 @@ public class VirheellisetTiedotException extends Exception {
         return virheet;
     }
 
+   /**
+     * Oletuskonstruktori.
+     */
+    public VirheellisetTiedotException(String objektinNimi) {
+
+        virheet = new LinkedHashMap<String, String>();
+        this.objektinNimi = objektinNimi;
+    }
+
+    /**
+     * Lisää uuden virhemerkinnän.
+     *
+     * @param avain
+     *            Tunniste, mihin virhe liittyy.
+     * @param arvo
+     *            Selite virheestä.
+     */
+    public void addVirhe(String avain, String arvo) {
+        virheet.put(avain, arvo);
+    }
+
+    /**
+     * @return Listaus virheistä, jota tähän poikkeukseen on lueteltu.
+     */
+    public Map<String, String> getVirheet() {
+        return virheet;
+    }
+  
+  
+   /**
+     * Oletuskonstruktori.
+     */
+    public VirheellisetTiedotException(String objektinNimi) {
+
+        virheet = new LinkedHashMap<String, String>();
+        this.objektinNimi = objektinNimi;
+    }
+
+    /**
+     * Lisää uuden virhemerkinnän.
+     *
+     * @param avain
+     *            Tunniste, mihin virhe liittyy.
+     * @param arvo
+     *            Selite virheestä.
+     */
+    public void addVirhe(String avain, String arvo) {
+        virheet.put(avain, arvo);
+    }
+
+    /**
+     * @return Listaus virheistä, jota tähän poikkeukseen on lueteltu.
+     */
+    public Map<String, String> getVirheet() {
+        return virheet;
+    }
+  
+  
+   /**
+     * Oletuskonstruktori.
+     */
+    public VirheellisetTiedotException(String objektinNimi) {
+
+        virheet = new LinkedHashMap<String, String>();
+        this.objektinNimi = objektinNimi;
+    }
+
+    /**
+     * Lisää uuden virhemerkinnän.
+     *
+     * @param avain
+     *            Tunniste, mihin virhe liittyy.
+     * @param arvo
+     *            Selite virheestä.
+     */
+    public void addVirhe(String avain, String arvo) {
+        virheet.put(avain, arvo);
+    }
+
+    /**
+     * @return Listaus virheistä, jota tähän poikkeukseen on lueteltu.
+     */
+    public Map<String, String> getVirheet() {
+        return virheet;
+    }
+  
+  
+  
+  
+  
     /**
      * @return <code>True</code> jos tässä poikkeuksessa on listattu virheitä.
      */
