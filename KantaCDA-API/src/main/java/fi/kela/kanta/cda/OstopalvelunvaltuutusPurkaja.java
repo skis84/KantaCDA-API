@@ -146,6 +146,62 @@ public class OstopalvelunvaltuutusPurkaja extends Purkaja {
 	}
 	
 
+	protected void puraOstopalvelunTiedot(POCDMT000040ClinicalDocument clinicalDocument,
+			OstopalvelunvaltuutusTO ostopalvelunvaltuutus) throws PurkuException {
+		for (POCDMT000040Component5 component : clinicalDocument.getComponent().getStructuredBody().getComponents().get(0).getSection().getComponents()) {
+			if (null != component.getSection() && null != component.getSection().getCode() && null != component.getSection().getCode().getCode()) {
+				String sectionCodeCode = component.getSection().getCode().getCode();
+				if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.OSTOPALVELUN_TYYPPI)) {
+					puraOstopalvelunTyyppi(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.OSTOPALVELUN_VALTUUTUKSEN_VOIMASSAOLO)) {
+					puraOstopalvelunvaltuutuksenVoimassaolo(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.PALVELUN_JARJESTAJA)) {
+					puraOstopalvelunJarjestaja(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.PALVELUN_TUOTTAJA)) {
+					puraOstopalvelunTuottaja(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.OSTOP_TUOTT_OIKEUS_HAKEA_PALVELUN_JARJ_REK)) {
+					puraOstopalvelunTuottajanHakuOikeus(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.OSTOP_TUOTT_OIKEUS_TALLENTAA_PALV_JARJ_REK)) {
+					puraOstopalvelunTuottajanTallennusOikeus(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.LUOVUTETTAVAT_ASIAKIRJAT)) {
+					puraOstopalvelunLuovuttettavatAsiakirjat(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.ASIAKIRJAN_TALLENTAJA)) {
+					puraAsiakirjanTallentaja(component.getSection(), ostopalvelunvaltuutus);
+				}
+			}
+		}
+		
+	}
+	
+	
+	protected void puraOstopalvelunTiedot(POCDMT000040ClinicalDocument clinicalDocument,
+			OstopalvelunvaltuutusTO ostopalvelunvaltuutus) throws PurkuException {
+		for (POCDMT000040Component5 component : clinicalDocument.getComponent().getStructuredBody().getComponents().get(0).getSection().getComponents()) {
+			if (null != component.getSection() && null != component.getSection().getCode() && null != component.getSection().getCode().getCode()) {
+				String sectionCodeCode = component.getSection().getCode().getCode();
+				if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.OSTOPALVELUN_TYYPPI)) {
+					puraOstopalvelunTyyppi(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.OSTOPALVELUN_VALTUUTUKSEN_VOIMASSAOLO)) {
+					puraOstopalvelunvaltuutuksenVoimassaolo(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.PALVELUN_JARJESTAJA)) {
+					puraOstopalvelunJarjestaja(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.PALVELUN_TUOTTAJA)) {
+					puraOstopalvelunTuottaja(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.OSTOP_TUOTT_OIKEUS_HAKEA_PALVELUN_JARJ_REK)) {
+					puraOstopalvelunTuottajanHakuOikeus(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.OSTOP_TUOTT_OIKEUS_TALLENTAA_PALV_JARJ_REK)) {
+					puraOstopalvelunTuottajanTallennusOikeus(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.LUOVUTETTAVAT_ASIAKIRJAT)) {
+					puraOstopalvelunLuovuttettavatAsiakirjat(component.getSection(), ostopalvelunvaltuutus);
+				} else if (sectionCodeCode.equals(KantaCDAConstants.OstopalvelunValtuutus.ASIAKIRJAN_TALLENTAJA)) {
+					puraAsiakirjanTallentaja(component.getSection(), ostopalvelunvaltuutus);
+				}
+			}
+		}
+		
+	}
+	
+	
 	protected void puraOstopalvelunTyyppi(POCDMT000040Section section, OstopalvelunvaltuutusTO ostopalvelunvaltuutus) {
 		for(POCDMT000040Component5 component : section.getComponents()) {
 			String sectionCodeCode = haeSectionCodeCode(component); 
