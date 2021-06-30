@@ -38,13 +38,6 @@ import org.hl7.v3.POCDMT000040RecordTarget;
 import org.hl7.v3.POCDMT000040Section;
 import org.hl7.v3.StrucDocText;
 
-import fi.kela.kanta.exceptions.PurkuException;
-import fi.kela.kanta.to.HenkilotiedotTO;
-import fi.kela.kanta.to.KokoNimiTO;
-import fi.kela.kanta.to.OstopalvelunvaltuutusTO;
-import fi.kela.kanta.util.JaxbUtil;
-import fi.kela.kanta.util.KantaCDAUtil;
-
 public class OstopalvelunvaltuutusPurkaja extends Purkaja {
 
 	private POCDMT000040ClinicalDocument clinicalDocument;
