@@ -55,17 +55,7 @@ public class VirheellisetTiedotException extends Exception {
         this.objektinNimi = objektinNimi;
     }
 
-    /**
-     * Lisää uuden virhemerkinnän.
-     *
-     * @param avain
-     *            Tunniste, mihin virhe liittyy.
-     * @param arvo
-     *            Selite virheestä.
-     */
-    public void addVirhe(String avain, String arvo) {
-        virheet.put(avain, arvo);
-    }
+  
 
     /**
      * @return Listaus virheistä, jota tähän poikkeukseen on lueteltu.
