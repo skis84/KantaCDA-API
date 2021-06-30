@@ -38,17 +38,7 @@ public class KantaCDAUtil {
 
     private KantaCDAUtil() {
     }
-
-    public static final String CONTROL_PATTERN = "\\r|\\n";
-    
-    public static final String HETU_DATE_FORMAT = "ddMMyy";
-    
-    public static final String Y_TUNNUS_EXPR = "([0-9]{7})-[0-9]";
-
-    private static final Logger LOGGER = LogManager.getLogger(KantaCDAUtil.class);
-
-    private static Map<String, String> iterUnit;
-
+	
     /**
      * muodostaa syntymäajan hetun perusteella
      * 
