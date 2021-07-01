@@ -30,19 +30,7 @@ import fi.kela.kanta.cda.KantaCDAConstants.AsiakirjaVersioYhteensopivuus;
  */
 public class AsiakirjaVersioUtil {
 
-    private static final String ASIAKIRJAVERSIO_OID_KEY = "asiakirjaversio.oid.";
-    private static final String ASIAKIRJAVERSIO_OID_LKM_KEY = "asiakirjaversio.oid.lkm";
-    private static final String ASIAKIRJAVERSIO_OID_JARJESTELMA_KEY = "asiakirjaversio.oid.jarjestelma";
-    private static final Map<String, AsiakirjaVersio> asiakirjaVersiot = new HashMap<String, AsiakirjaVersio>();
-    private static final Object versiotlock = new Object();
-
-    public AsiakirjaVersioUtil(Properties props) {
-        synchronized (versiotlock) {
-            if ( asiakirjaVersiot.size() == 0 ) {
-                alustaVersiot(props);
-            }
-        }
-    }
+  
 
     /**
      * Palauttaa järjestelmän käyttämän asiakirjamääritysversion oid:n
