@@ -29,13 +29,7 @@ import fi.kela.kanta.cda.validation.Validoija;
 
 public abstract class ArkistoKasaaja extends Kasaaja {
 
-	protected static final String template_id = "templateId";
-    protected static final String code = "%s.code";
-    protected static final String title = "%s.title";
-    protected static final String code_title = "%s.code.title";
-    protected static final String code_system_name = "%s.code.codeSystemName";
-    protected static final String code_display_name = "%s.code.displayName";
-    protected static final String code_ = "%s.title";
+
     
 	protected Validoija validoija;
 	
