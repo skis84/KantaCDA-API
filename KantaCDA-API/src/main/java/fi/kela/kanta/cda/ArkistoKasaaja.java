@@ -15,8 +15,6 @@
 -->
 package fi.kela.kanta.cda;
 
-import java.math.BigInteger;
-import java.util.Properties;
 
 
 
