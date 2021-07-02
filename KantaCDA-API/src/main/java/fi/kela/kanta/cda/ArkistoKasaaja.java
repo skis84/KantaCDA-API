@@ -15,30 +15,14 @@
 -->
 package fi.kela.kanta.cda;
 
-import java.math.BigInteger;
-import java.util.Properties;
 
-import javax.xml.bind.JAXBException;
 
-import org.hl7.v3.ActClinicalDocument;
-import org.hl7.v3.POCDMT000040ClinicalDocument;
-import org.hl7.v3.POCDMT000040RelatedDocument;
-import org.hl7.v3.XActRelationshipDocument;
 
 import fi.kela.kanta.cda.validation.Validoija;
 
 public abstract class ArkistoKasaaja extends Kasaaja {
 
-	protected static final String template_id = "templateId";
-    protected static final String code = "%s.code";
-    protected static final String title = "%s.title";
-    protected static final String code_title = "%s.code.title";
-    protected static final String code_system_name = "%s.code.codeSystemName";
-    protected static final String code_display_name = "%s.code.displayName";
-    protected static final String code_ = "%s.title";
-    
-	protected Validoija validoija;
-	
+
 	public ArkistoKasaaja(Properties properties) {
 		super(properties);
 		// TODO Auto-generated constructor stub
